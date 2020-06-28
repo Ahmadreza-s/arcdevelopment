@@ -1,13 +1,145 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5d68c442-9f1e-481d-9d7a-45d2dd3e9a8c" name="Default Changelist" comment="" />
+    <list default="true" id="5d68c442-9f1e-481d-9d7a-45d2dd3e9a8c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/favicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/animations/automationAnimation/data.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/animations/documentsAnimation/data.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/animations/documentsAnimation/img_0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/animations/documentsAnimation/img_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/animations/estimateAnimation/data.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/animations/integrationAnimation/data.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/animations/landinganimation/data.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/animations/landinganimation/data.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/animations/landinganimation/img_0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/animations/landinganimation/img_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/animations/landinganimation/img_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/animations/landinganimation/img_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/animations/landinganimation/img_4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/animations/scaleAnimation/data.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/animations/technologyAnimation/data.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/animations/uxAnimation/data.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/animations/uxAnimation/img_0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/animations/uxAnimation/img_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/animations/uxAnimation/img_10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/animations/uxAnimation/img_11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/animations/uxAnimation/img_12.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/animations/uxAnimation/img_13.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/animations/uxAnimation/img_14.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/animations/uxAnimation/img_15.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/animations/uxAnimation/img_16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/animations/uxAnimation/img_17.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/animations/uxAnimation/img_18.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/animations/uxAnimation/img_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/animations/uxAnimation/img_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/animations/uxAnimation/img_4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/animations/uxAnimation/img_5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/animations/uxAnimation/img_6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/animations/uxAnimation/img_7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/animations/uxAnimation/img_8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/animations/uxAnimation/img_9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/Custom Software Icon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/Footer Adornment.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/analytics.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/android.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/backArrow.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/backArrowDisabled.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/background.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/bell.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/biometrics.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/buildIcon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/bulb.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/camera.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/cash.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/check.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/consultationIcon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/customized.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/data.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/designIcon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/ecommerce.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/email.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/extendAccess.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/facebook.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/forwardArrow.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/forwardArrowDisabled.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/founder.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/globe.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/gps.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/history.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/increaseEngagement.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/info.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/infoBackground.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/instagram.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/iphone.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/iterateIcon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/launchIcon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/maintainIcon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/mobile.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/mobileBackground.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/mobileIcon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/mockupIcon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/outreach.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/people.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/person.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/persons.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/phone.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/puppy.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/repeatingBackground.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/reviewIcon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/root.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/send.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/seo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/software.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/stopwatch.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/swissKnife.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/twitter.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/upload.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/users.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/vision.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/website.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/websiteIcon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/yearbook.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/App.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ui/Header.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ui/Theme.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/serviceWorker.js" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1dnjpXFj31jUl6nc7EvV2GLggsX" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -15,8 +147,38 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../teacher-scoring-system" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path" value="node" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Ahmadreza\WebstormProjects\arcdevelopment\src" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Ahmadreza\WebstormProjects\arcdevelopment\public" />
+      <recent name="C:\Users\Ahmadreza\WebstormProjects\arcdevelopment\src\components" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.npm start">
+    <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
+      <method v="2" />
+    </configuration>
+    <configuration name="npm start" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -28,8 +190,43 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1593067934451</updated>
-      <workItem from="1593067936449" duration="259000" />
+      <workItem from="1593067936449" duration="5896000" />
+      <workItem from="1593089922988" duration="2988000" />
+      <workItem from="1593099305410" duration="1546000" />
+      <workItem from="1593121497276" duration="1959000" />
+      <workItem from="1593155241164" duration="800000" />
+      <workItem from="1593164876461" duration="108000" />
+      <workItem from="1593165014230" duration="2000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="413" y="116" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1593078301701">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="413" y="116" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.738@0.0.1366.738" timestamp="1593078301701" />
+    <state x="463" y="124" key="FileChooserDialogImpl" timestamp="1593123767519">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="463" y="124" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1593123767519" />
+    <state width="1345" height="153" key="GridCell.Tab.0.bottom" timestamp="1593164520034">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1345" height="153" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1593164520034" />
+    <state width="1345" height="153" key="GridCell.Tab.0.center" timestamp="1593164520034">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1345" height="153" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1593164520034" />
+    <state width="1345" height="153" key="GridCell.Tab.0.left" timestamp="1593164520034">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1345" height="153" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1593164520034" />
+    <state width="1345" height="153" key="GridCell.Tab.0.right" timestamp="1593164520034">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1345" height="153" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1593164520034" />
   </component>
 </project>
