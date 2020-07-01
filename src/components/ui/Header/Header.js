@@ -4,21 +4,36 @@ import Toolbar from '@material-ui/core/Toolbar';
 import useScrollTrigger from '@material-ui/core/useScrollTrigger';
 import Slide from '@material-ui/core/Slide';
 import { makeStyles } from '@material-ui/styles';
-import logo from '../../assets/logo.svg';
+import logo from '../../../assets/logo.svg';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import { Button } from '@material-ui/core';
 import { Link, useLocation } from 'react-router-dom';
 import { HeaderMenu } from './HeaderMenu';
+import useMediaQuery from '@material-ui/core/useMediaQuery';
+import useTheme from '@material-ui/core/styles/useTheme';
+import HeaderDrawer from './HeaderDrawer';
 
 const useStyles = makeStyles((theme) => {
   return {
     toolbarMargin: {
       ...theme.mixins.toolbar,
-      marginBottom: '3em'
+      marginBottom: '3em',
+      [theme.breakpoints.down('md')]: {
+        height: '2em'
+      },
+      [theme.breakpoints.down('xs')]: {
+        height: '1.25em'
+      }
     },
     logo: {
-      height: '8em'
+      height: '8em',
+      [theme.breakpoints.down('md')]: {
+        height: '7em'
+      },
+      [theme.breakpoints.down('xs')]: {
+        height: '5.5em'
+      }
     },
     logoContainer: {
       padding: 0,
@@ -40,6 +55,9 @@ const useStyles = makeStyles((theme) => {
       marginLeft: 50,
       marginRight: 25,
       height: 45
+    },
+    appBar: {
+      zIndex: theme.zIndex.modal + 1
     }
   };
 });
@@ -55,6 +73,8 @@ const HideOnScroll = ({ children }) => {
 };
 
 const Header = () => {
+  const theme = useTheme();
+  const matches = useMediaQuery(theme.breakpoints.up('lg'));
   const location = useLocation();
 
   const classes = useStyles();
@@ -131,10 +151,57 @@ const Header = () => {
     }
   }, [location]);
 
+  const tabs = (
+    <>
+      <Tabs
+        className={classes.tabContainer}
+        value={activeTabIndex}
+        onChange={changeHandler}
+      >
+        <Tab className={classes.tab} component={Link} to='/' label='Home' />
+        <Tab
+          className={classes.tab}
+          component={Link}
+          onMouseOver={hoverMenuHandler}
+          to='/services'
+          label='Services'
+        />
+        <Tab
+          className={classes.tab}
+          component={Link}
+          to='/revolution'
+          label='The Revolution'
+        />
+        <Tab
+          className={classes.tab}
+          component={Link}
+          to='/about'
+          label='About Us'
+        />
+        <Tab
+          className={classes.tab}
+          component={Link}
+          to='/contact'
+          label='Contact Us'
+        />
+      </Tabs>
+      <Button color='secondary' variant='contained' className={classes.button}>
+        Free Estimate
+      </Button>
+      <HeaderMenu
+        anchorEl={anchorEl}
+        open={openMenu}
+        handleClose={closeMenuHandler}
+        handleSelected={(index) => setServiceMenuSelectedIndex(index)}
+        selectedIndex={serviceMenuSelectedIndex}
+      />
+    </>
+  );
+
   return (
     <>
       <HideOnScroll>
-        <AppBar>
+        <AppBar className={classes.appBar}>
           <Toolbar disableGutters>
             <Button
               disableRipple
@@ -144,57 +211,14 @@ const Header = () => {
             >
               <img alt='company logo' src={logo} className={classes.logo} />
             </Button>
-            <Tabs
-              className={classes.tabContainer}
-              value={activeTabIndex}
-              onChange={changeHandler}
-            >
-              <Tab
-                className={classes.tab}
-                component={Link}
-                to='/'
-                label='Home'
+            {matches ? (
+              tabs
+            ) : (
+              <HeaderDrawer
+                tlbrMrgin={classes.toolbarMargin}
+                activeIndex={activeTabIndex}
               />
-              <Tab
-                className={classes.tab}
-                component={Link}
-                onMouseOver={hoverMenuHandler}
-                to='/services'
-                label='Services'
-              />
-              <Tab
-                className={classes.tab}
-                component={Link}
-                to='/revolution'
-                label='The Revolution'
-              />
-              <Tab
-                className={classes.tab}
-                component={Link}
-                to='/about'
-                label='About Us'
-              />
-              <Tab
-                className={classes.tab}
-                component={Link}
-                to='/contact'
-                label='Contact Us'
-              />
-            </Tabs>
-            <Button
-              color='secondary'
-              variant='contained'
-              className={classes.button}
-            >
-              Free Estimate
-            </Button>
-            <HeaderMenu
-              anchorEl={anchorEl}
-              open={openMenu}
-              handleClose={closeMenuHandler}
-              handleSelected={(index) => setServiceMenuSelectedIndex(index)}
-              selectedIndex={serviceMenuSelectedIndex}
-            />
+            )}
           </Toolbar>
         </AppBar>
       </HideOnScroll>

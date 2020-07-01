@@ -55,6 +55,7 @@ export const HeaderMenu = ({
       onClose={handleClose}
       open={open}
       elevation={0}
+      keepMounted
     >
       {items.map((item, index) => (
         <MenuItem
