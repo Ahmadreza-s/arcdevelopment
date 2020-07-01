@@ -1,7 +1,7 @@
 import React from 'react';
 import { Menu, MenuItem, makeStyles } from '@material-ui/core';
 import { Link } from 'react-router-dom';
-
+import links from '../../../links';
 const useStyles = makeStyles((theme) => ({
   menu: {
     '& .MuiMenu-paper': {
@@ -18,24 +18,7 @@ const useStyles = makeStyles((theme) => ({
     }
   }
 }));
-const items = [
-  {
-    title: 'Services',
-    link: '/services'
-  },
-  {
-    title: 'Custom Software Development',
-    link: '/customsoftware'
-  },
-  {
-    title: 'Mobile App Development',
-    link: '/mobileapps'
-  },
-  {
-    title: 'Website Development',
-    link: '/websites'
-  }
-];
+
 export const HeaderMenu = ({
   anchorEl,
   open,
@@ -45,8 +28,6 @@ export const HeaderMenu = ({
 }) => {
   const classes = useStyles();
 
-  console.log('selectedIndex', selectedIndex);
-
   return (
     <Menu
       anchorEl={anchorEl}
@@ -55,11 +36,12 @@ export const HeaderMenu = ({
       onClose={handleClose}
       open={open}
       elevation={0}
+      style={{ zIndex: 1302 }}
       keepMounted
     >
-      {items.map((item, index) => (
+      {links[1].children.map((link, index) => (
         <MenuItem
-          key={item.title}
+          key={link.title}
           selected={selectedIndex === index}
           classes={{ root: classes.menuItem }}
           onClick={(e) => {
@@ -67,9 +49,9 @@ export const HeaderMenu = ({
             handleClose(e);
           }}
           component={Link}
-          to={item.link}
+          to={link.url}
         >
-          {item.title}
+          {link.title}
         </MenuItem>
       ))}
     </Menu>

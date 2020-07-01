@@ -9,6 +9,8 @@ import {
 } from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu';
 import { Link } from 'react-router-dom';
+import links from '../../../links';
+
 const useStyles = makeStyles((theme) => {
   return {
     drawerIconContainer: {
@@ -37,15 +39,6 @@ const useStyles = makeStyles((theme) => {
     }
   };
 });
-
-const items = [
-  { url: '/', title: 'Home' },
-  { url: '/services', title: 'Services' },
-  { url: '/revolution', title: 'The Revolution' },
-  { url: '/about', title: 'About Us' },
-  { url: '/contact', title: 'Contact Us' },
-  { url: '/estimate', title: 'Free Estimate' }
-];
 
 const HeaderDrawer = ({ activeIndex, tlbrMrgin }) => {
   const classes = useStyles();
@@ -79,19 +72,19 @@ const HeaderDrawer = ({ activeIndex, tlbrMrgin }) => {
       >
         <div className={tlbrMrgin} />
         <List disablePadding component='nav'>
-          {items.map((item, index) => (
+          {links.map((link, index) => (
             <ListItemLink
-              key={item.title}
+              key={link.title}
               selected={activeIndex === index}
               classes={{ selected: classes.drawerItemSelected }}
-              to={item.url}
+              to={link.url}
               className={
-                items.length - 1 !== index
+                links.length - 1 !== index
                   ? classes.drawerItem
                   : [classes.drawerItem, classes.drawerItemEstimate].join(' ')
               }
             >
-              <ListItemText disableTypography>{item.title}</ListItemText>
+              <ListItemText disableTypography>{link.title}</ListItemText>
             </ListItemLink>
           ))}
         </List>
