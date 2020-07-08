@@ -3,6 +3,7 @@ import { ThemeProvider } from '@material-ui/styles';
 import { Route, Switch, BrowserRouter } from 'react-router-dom';
 import theme from './ui/Theme';
 import Header from './ui/Header/Header';
+import Footer from './ui/Footer/Footer';
 const App = () => {
   return (
     <>
@@ -23,7 +24,7 @@ const App = () => {
             />
             <Route
               exact
-              path='/mibleapps'
+              path='/mobileapps'
               component={() => <div>Mobile Apps</div>}
             />
             <Route
@@ -48,6 +49,7 @@ const App = () => {
               component={() => <div>Estimate</div>}
             />
           </Switch>
+          <Footer />
         </BrowserRouter>
       </ThemeProvider>
     </>
