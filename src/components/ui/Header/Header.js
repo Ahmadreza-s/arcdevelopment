@@ -54,7 +54,10 @@ const useStyles = makeStyles((theme) => {
       borderRadius: 50,
       marginLeft: 50,
       marginRight: 25,
-      height: 45
+      height: 45,
+      '&:hover': {
+        backgroundColor: theme.palette.secondary.light
+      }
     },
     appBar: {
       zIndex: theme.zIndex.modal + 1
@@ -156,8 +159,7 @@ const Header = () => {
       <Tabs
         className={classes.tabContainer}
         value={activeTabIndex}
-        onChange={changeHandler}
-      >
+        onChange={changeHandler}>
         <Tab className={classes.tab} component={Link} to='/' label='Home' />
         <Tab
           className={classes.tab}
@@ -185,7 +187,12 @@ const Header = () => {
           label='Contact Us'
         />
       </Tabs>
-      <Button color='secondary' variant='contained' className={classes.button}>
+      <Button
+        component={Link}
+        to='/estimate'
+        color='secondary'
+        variant='contained'
+        className={classes.button}>
         Free Estimate
       </Button>
       <HeaderMenu
@@ -207,8 +214,7 @@ const Header = () => {
               disableRipple
               component={Link}
               to='/'
-              className={classes.logoContainer}
-            >
+              className={classes.logoContainer}>
               <img alt='company logo' src={logo} className={classes.logo} />
             </Button>
             {matches ? (

@@ -4,6 +4,7 @@ import { Route, Switch, BrowserRouter } from 'react-router-dom';
 import theme from './ui/Theme';
 import Header from './ui/Header/Header';
 import Footer from './ui/Footer/Footer';
+import LandingPage from './LandingPage/LandingPage';
 const App = () => {
   return (
     <>
@@ -11,7 +12,9 @@ const App = () => {
         <BrowserRouter>
           <Header />
           <Switch>
-            <Route exact path='/' component={() => <div>Home</div>} />
+            <Route exact path='/'>
+              <LandingPage />
+            </Route>
             <Route
               exact
               path='/services'
