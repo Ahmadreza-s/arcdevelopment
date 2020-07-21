@@ -21,7 +21,8 @@ export default createMuiTheme({
       fontFamily: 'Raleway',
       textTransform: 'none',
       fontWeight: '700',
-      fontSize: '1rem'
+      fontSize: '1rem',
+      color: 'white'
     },
     estimateBtn: {
       fontFamily: 'Pacifico',
@@ -55,6 +56,11 @@ export default createMuiTheme({
     subtitle2: {
       color: 'white',
       fontSize: '1.25rem',
+      fontWeight: 300
+    },
+    body1: {
+      fontSize: '1.25rem',
+      color: arcGray,
       fontWeight: 300
     },
     learnButton: {

@@ -6,6 +6,7 @@ import Header from './ui/Header/Header';
 import Footer from './ui/Footer/Footer';
 import LandingPage from './LandingPage/LandingPage';
 import ServicesPage from './ServicesPage/ServicesPage';
+import CustomSoftwarePage from './CustomSoftwarePage/CustomSoftwarePage';
 const App = () => {
   return (
     <>
@@ -19,11 +20,9 @@ const App = () => {
             <Route exact path='/services'>
               <ServicesPage />
             </Route>
-            <Route
-              exact
-              path='/customsoftware'
-              component={() => <div>Custom Software</div>}
-            />
+            <Route exact path='/customsoftware'>
+              <CustomSoftwarePage />
+            </Route>
             <Route
               exact
               path='/mobileapps'
