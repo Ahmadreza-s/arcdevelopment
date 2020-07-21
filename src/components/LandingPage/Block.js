@@ -22,12 +22,13 @@ const useStyles = makeStyles((theme) => ({
   },
   icon: {
     marginLeft: '2em',
+
     [theme.breakpoints.down('xs')]: {
       marginLeft: 0
     }
   },
   serviceContainer: {
-    marginTop: '12em',
+    marginTop: '10em',
     [theme.breakpoints.down('sm')]: {
       padding: 25
     }
@@ -47,7 +48,8 @@ const Block = ({ isRight, title, subtitle1, subtitle2, image, alt, link }) => {
         item
         style={{
           marginLeft: isRight ? null : matchesSM ? 0 : '5em',
-          textAlign: matchesSM ? 'center' : null
+          textAlign: matchesSM ? 'center' : null,
+          width: !matchesSM ? '35em' : null
         }}>
         <Typography variant='h4'>{title}</Typography>
         <Typography variant='subtitle1' style={{ marginBottom: '1em' }}>
@@ -70,7 +72,7 @@ const Block = ({ isRight, title, subtitle1, subtitle2, image, alt, link }) => {
       <Grid
         item
         style={{ marginRight: !isRight ? null : matchesSM ? 0 : '5em' }}>
-        <img className={classes.icon} alt={alt} src={image} />
+        <img className={classes.icon} alt={alt} src={image} width='250em' />
       </Grid>
     </Grid>
   );

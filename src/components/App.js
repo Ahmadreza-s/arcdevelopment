@@ -5,6 +5,7 @@ import theme from './ui/Theme';
 import Header from './ui/Header/Header';
 import Footer from './ui/Footer/Footer';
 import LandingPage from './LandingPage/LandingPage';
+import ServicesPage from './ServicesPage/ServicesPage';
 const App = () => {
   return (
     <>
@@ -15,11 +16,9 @@ const App = () => {
             <Route exact path='/'>
               <LandingPage />
             </Route>
-            <Route
-              exact
-              path='/services'
-              component={() => <div>Services</div>}
-            />
+            <Route exact path='/services'>
+              <ServicesPage />
+            </Route>
             <Route
               exact
               path='/customsoftware'
