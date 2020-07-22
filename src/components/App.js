@@ -7,6 +7,7 @@ import Footer from './ui/Footer/Footer';
 import LandingPage from './LandingPage/LandingPage';
 import ServicesPage from './ServicesPage/ServicesPage';
 import CustomSoftwarePage from './CustomSoftwarePage/CustomSoftwarePage';
+import MobileAppsPage from './MobileAppsPage/MobileAppsPage';
 const App = () => {
   return (
     <>
@@ -23,11 +24,9 @@ const App = () => {
             <Route exact path='/customsoftware'>
               <CustomSoftwarePage />
             </Route>
-            <Route
-              exact
-              path='/mobileapps'
-              component={() => <div>Mobile Apps</div>}
-            />
+            <Route exact path='/mobileapps'>
+              <MobileAppsPage />
+            </Route>
             <Route
               exact
               path='/websites'
