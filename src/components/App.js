@@ -8,6 +8,7 @@ import LandingPage from './LandingPage/LandingPage';
 import ServicesPage from './ServicesPage/ServicesPage';
 import CustomSoftwarePage from './CustomSoftwarePage/CustomSoftwarePage';
 import MobileAppsPage from './MobileAppsPage/MobileAppsPage';
+import WebsitesPage from './WebsitesPage/WebsitesPage';
 const App = () => {
   return (
     <>
@@ -27,11 +28,9 @@ const App = () => {
             <Route exact path='/mobileapps'>
               <MobileAppsPage />
             </Route>
-            <Route
-              exact
-              path='/websites'
-              component={() => <div>Websites</div>}
-            />
+            <Route exact path='/websites'>
+              <WebsitesPage />
+            </Route>
             <Route
               exact
               path='/revolution'
