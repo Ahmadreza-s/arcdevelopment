@@ -10,6 +10,7 @@ import CustomSoftwarePage from './CustomSoftwarePage/CustomSoftwarePage';
 import MobileAppsPage from './MobileAppsPage/MobileAppsPage';
 import WebsitesPage from './WebsitesPage/WebsitesPage';
 import RevolutionPage from './RevolutionPage/RevolutionPage';
+import AboutUsPage from './AboutUsPage/AboutUsPage';
 const App = () => {
   return (
     <>
@@ -35,7 +36,9 @@ const App = () => {
             <Route exact path='/revolution'>
               <RevolutionPage />
             </Route>
-            <Route exact path='/about' component={() => <div>About us</div>} />
+            <Route exact path='/about'>
+              <AboutUsPage />
+            </Route>
             <Route
               exact
               path='/contact'
