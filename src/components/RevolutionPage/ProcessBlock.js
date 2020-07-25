@@ -30,7 +30,7 @@ const ProcessBlock = ({
       item
       container
       direction={matchesMD ? 'column' : 'row'}
-      style={{ backgroundColor: backgroundColor, height: '90em' }}
+      style={{ backgroundColor: backgroundColor, height: '80em' }}
       className={classes.rowContainer}>
       <Grid
         item
@@ -42,7 +42,11 @@ const ProcessBlock = ({
           <Typography
             variant='h4'
             gutterBottom
-            style={{ marginTop: '5em', color: headerColor }}>
+            style={{
+              marginTop: '5em',
+              color: headerColor,
+              marginBottom: matchesMD ? '2em' : 0
+            }}>
             {headerText}
           </Typography>
         </Grid>
@@ -64,8 +68,8 @@ const ProcessBlock = ({
           src={img}
           alt={alt}
           style={{
-            maxWidth: matchesMD ? 200 : 1000,
-            maxHeight: matchesMD ? '30em' : undefined,
+            maxWidth: matchesMD ? 200 : 600,
+            maxHeight: matchesMD ? '20em' : undefined,
             marginTop: matchesMD ? '5em' : 0
           }}
         />
