@@ -9,6 +9,7 @@ import ServicesPage from './ServicesPage/ServicesPage';
 import CustomSoftwarePage from './CustomSoftwarePage/CustomSoftwarePage';
 import MobileAppsPage from './MobileAppsPage/MobileAppsPage';
 import WebsitesPage from './WebsitesPage/WebsitesPage';
+import RevolutionPage from './RevolutionPage/RevolutionPage';
 const App = () => {
   return (
     <>
@@ -31,11 +32,9 @@ const App = () => {
             <Route exact path='/websites'>
               <WebsitesPage />
             </Route>
-            <Route
-              exact
-              path='/revolution'
-              component={() => <div>The Revolution</div>}
-            />
+            <Route exact path='/revolution'>
+              <RevolutionPage />
+            </Route>
             <Route exact path='/about' component={() => <div>About us</div>} />
             <Route
               exact
