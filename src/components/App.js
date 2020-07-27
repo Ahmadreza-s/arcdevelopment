@@ -11,6 +11,7 @@ import MobileAppsPage from './MobileAppsPage/MobileAppsPage';
 import WebsitesPage from './WebsitesPage/WebsitesPage';
 import RevolutionPage from './RevolutionPage/RevolutionPage';
 import AboutUsPage from './AboutUsPage/AboutUsPage';
+import ContactPage from './ContactPage/ContactPage';
 const App = () => {
   return (
     <>
@@ -39,11 +40,9 @@ const App = () => {
             <Route exact path='/about'>
               <AboutUsPage />
             </Route>
-            <Route
-              exact
-              path='/contact'
-              component={() => <div>Contact us</div>}
-            />
+            <Route exact path='/contact'>
+              <ContactPage />
+            </Route>
             <Route
               exact
               path='/estimate'
